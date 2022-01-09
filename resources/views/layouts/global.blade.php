@@ -65,7 +65,7 @@
                             <a href="{{ route('barang.create') }}">Tambah Barang</a>
                         </li>
                         <li>
-                            <a href="">Log Barang</a>
+                            <a href="{{route('barang.log-barang')}}">Log Barang</a>
                         </li>
                     </ul>
                 </li>
@@ -74,7 +74,7 @@
                         <i class="fas fa-user-cog"></i>
                         Account Setting
                     </a>
-                    <a href="">
+                    <a href="{{ route('portofolio.index') }}">
                         <i class="fas fa-briefcase"></i>
                         Portofolio
                     </a>

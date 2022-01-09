@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PortofolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,9 +28,7 @@ Route::post('registrasi', [AuthController::class, 'registrasi'])->name('user.reg
 Route::middleware('user')->group(function () {
     Route::get('', [BarangController::class, 'index'])->name('barang.index');
     Route::get('create', [BarangController::class, 'create'])->name('barang.create');
-    Route::post('store', [BarangController::class, 'store'])->name('barang.store');
-    Route::get('edit', [BarangController::class, 'edit'])->name('barang.edit');
-    Route::post('update', [BarangController::class, 'update'])->name('barang.update');
-    Route::post('delete', [BarangController::class, 'delete'])->name('barang.delete');
+    Route::get('log-barang', [BarangController::class, 'logBarang'])->name('barang.log-barang');
+    Route::get('portofolio', [PortofolioController::class, 'index'])->name('portofolio.index');
     Route::post('logout', [AuthController::class, 'logout'])->name('user.logout');
 });

@@ -16,23 +16,8 @@ class BarangController extends Controller
         return view('barang.create');
     }
 
-    // public function store()
-    // {
-    //     POST TO FIREBASE
-    // }
-
-    public function edit()
+    public function logBarang()
     {
-        return view('barang.edit');
+        return view('barang.logbarang');
     }
-
-    // public function update($id)
-    // {
-    //     POST TO FIREBASE
-    // }
-
-    // public function delete($id)
-    // {
-    //     DELETE IN FIREBASE
-    // }
 }
